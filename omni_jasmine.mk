@@ -29,6 +29,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_PACKAGES += \
     charger_res_images \
     charger
+# Boot control HAL
+PRODUCT_PACKAGES += \
+    bootctrl.msm8953
+
+PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+    bootctrl.msm8953 \
+    libgptutils \
+    libz
 
 # Define time zone data path
 ifneq ($(wildcard bionic/libc/zoneinfo),)
