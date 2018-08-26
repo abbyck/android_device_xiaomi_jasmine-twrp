@@ -46,6 +46,8 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Kernel
+TARGET_KERNEL_ARCH := arm64		
+TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
@@ -74,6 +76,7 @@ TARGET_RECOVERY_WIPE := $(LOCAL_PATH)/recovery/root/etc/recovery.wipe
 
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_HAS_NO_REAL_SDCARD := true
 
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
