@@ -29,6 +29,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_PACKAGES += \
     charger_res_images \
     charger
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     bootctrl.msm8953
