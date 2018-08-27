@@ -30,12 +30,15 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-# Boot control HAL
+# Bootloader HAL used for A/B updates.
 PRODUCT_PACKAGES += \
-    bootctrl.msm8953
+    bootctrl.sdm660
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.msm8953 \
+    bootctrl.sdm660 \
     libgptutils \
     libz
 
