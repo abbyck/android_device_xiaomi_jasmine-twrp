@@ -6,6 +6,7 @@ LOCAL_PATH := $(call my-dir)
 
 # HAL Shared library for the target. Used by libhardware.
 include $(CLEAR_VARS)
+LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/gpt-utils/inc
 LOCAL_CFLAGS += -Wall -Werror
 LOCAL_SHARED_LIBRARIES += liblog libgptutils libcutils
 LOCAL_HEADER_LIBRARIES := libhardware_headers libsystem_headers
@@ -18,6 +19,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 # Static library for the target. Used by update_engine_sideload from recovery.
 include $(CLEAR_VARS)
+LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/gpt-utils/incLOC
 LOCAL_CFLAGS += -Wall -Werror
 LOCAL_SHARED_LIBRARIES += liblog libgptutils libcutils
 LOCAL_HEADER_LIBRARIES := libhardware_headers libsystem_headers
