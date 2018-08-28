@@ -82,7 +82,7 @@ BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
