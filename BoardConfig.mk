@@ -82,7 +82,6 @@ BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # TWRP Configuration
-AB_OTA_UPDATER := true
 TW_THEME := portrait_hdpi
 TW_INCLUDE_CRYPTO := true
 TW_MAX_BRIGHTNESS := 100
